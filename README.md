@@ -35,7 +35,7 @@ For at lære mere om Next.js, se følgende ressourcer:
 
 ## Ugeplan
 
-ugeplanen er et forslag til proces, ikke en kravspecifikation. De må gerne arbejde anderledes, så længe de når de specifikke mål og kan begrunde deres valg.
+Ugeplanen er et forslag til proces, ikke en kravspecifikation. De må gerne arbejde anderledes, så længe de når de specifikke mål og kan begrunde deres valg.
 
 | Dag     | Fokus                               | Forslag til arbejde                                                                                                         |
 | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
