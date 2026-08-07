@@ -40,7 +40,7 @@ Ugeplanen er et forslag til proces, ikke en kravspecifikation. De må gerne arbe
 | Dag     | Fokus                               | Forslag til arbejde                                                                                                         |
 | ------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Mandag  | Forstå opgaven og planlæg løsningen | Klargør projektet, opret API-adgang, læs Thinking in React – Step 1, analysér Figma og lav et forslag til komponenthierarki |
-| Tirsdag | Fra analyse til komponenter         | Opret projektets komponentstruktur og begynd at implementere genanvendelige UI-komponenter med Tailwind                     |
+| Tirsdag | Fra analyse til komponenter         | Læs Thinking in React – Step 2: Build a static version in React. Opret projektets komponentstruktur og begynd at implementere genanvendelige UI-komponenter med Tailwind                     |
 | Onsdag  | Opbyg ListView                      | Sammensæt komponenterne til List View og arbejd videre med layout, props og statiske billeder                               |
 | Torsdag | Opbyg DetailView                    | Byg Detail View, genbrug relevante komponenter og tilpas løsningen til Figma                                                |
 | Fredag  | Forbedring og kvalitetssikring      | Sammenlign med Figma, justér styling, refaktorér komponentstrukturen og gennemgå den samlede løsning                        |
