@@ -43,4 +43,4 @@ ugeplanen er et forslag til proces, ikke en kravspecifikation. De må gerne arbe
 | Tirsdag | Fra analyse til komponenter         | Opret projektets komponentstruktur og begynd at implementere genanvendelige UI-komponenter med Tailwind                     |
 | Onsdag  | Opbyg ListView                      | Sammensæt komponenterne til List View og arbejd videre med layout, props og statiske billeder                               |
 | Torsdag | Opbyg DetailView                    | Byg Detail View, genbrug relevante komponenter og tilpas løsningen til Figma                                                |
-| Fredag  | Forbedr og kvalitetssikr            | Sammenlign med Figma, justér styling, refaktorér komponentstrukturen og gennemgå den samlede løsning                        |
+| Fredag  | Forbedring og kvalitetssikring      | Sammenlign med Figma, justér styling, refaktorér komponentstrukturen og gennemgå den samlede løsning                        |
