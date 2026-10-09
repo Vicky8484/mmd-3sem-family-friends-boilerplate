@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {Geist, Geist_Mono} from "next/font/google";
+import {IoMdNotificationsOutline} from "react-icons/io";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,13 +17,19 @@ export const metadata = {
     "Browse a list of breeds, view pictures, and learn about each dog’s size, personality, activity level, and care needs.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-gray-900">
+        <header className="flex h-8 text-gray-900 font-bold items-center p-4 border-black justify-between">
+          <h2>FamilyFriends</h2>
+          <IoMdNotificationsOutline />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
