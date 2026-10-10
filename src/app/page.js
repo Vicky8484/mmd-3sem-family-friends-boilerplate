@@ -8,7 +8,7 @@ export default function ListView() {
   return (
     <>
       <div className="flex gap-4 m-4 items-center">
-        <div className="bg-pink-300 hover:bg-pink-400 active:bg-pink-500 rounded-full p-3 h-full text-white">
+        <div className="transition-colors duration-400 ease-in-out bg-(--coral-accent) hover:bg-[#E38982] active:bg-[#E38982] rounded-full p-3 h-full text-white">
           <LiaSearchSolid className="size-8" />
         </div>
         <input
@@ -19,35 +19,31 @@ export default function ListView() {
       </div>
       <section className="grid grid-cols-2 p-4 gap-4">
         <BreedCard
-          className="shadow-xl rounded-3xl grid"
+          className="breed-card"
           breedname="Affenpinscher"
           from="Northern, Germany"
         />
         <BreedCard
-          className="shadow-xl rounded-3xl grid"
+          className="breed-card"
           breedname="Afghan Hound"
           from="Afghanistan"
         />
         <BreedCard
-          className="shadow-xl rounded-3xl grid"
+          className="breed-card"
           breedname="Airedale Terrier"
           from="Yorkshire, England"
         />
         <BreedCard
-          className="shadow-xl rounded-3xl grid"
+          className="breed-card"
           breedname="Akbash"
           from="Western Turkey"
         />
         <BreedCard
-          className="shadow-xl rounded-3xl grid"
+          className="breed-card"
           breedname="Creepy dawg"
           from="Brazil"
         />
-        <BreedCard
-          className="shadow-xl rounded-3xl grid"
-          breedname="Akita"
-          from="Brazil"
-        />
+        <BreedCard className="breed-card" breedname="Akita" from="Brazil" />
       </section>
     </>
   );

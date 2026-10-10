@@ -1,47 +1,33 @@
-"use client"; /*nødvendigt, fordi knappen bruger klik og react states*/
-
 import Link from "next/link";
 import {MdKeyboardArrowLeft} from "react-icons/md";
 import Image from "next/image";
-import {useState} from "react";
-import {FaRegStar, FaStar} from "react-icons/fa";
 import Description from "../../components/Description";
+import StarBtn from "../../components/StarBtn";
+import MiniCard from "@/app/components/MiniTitleCard";
 
 const DetailView = () => {
-  const [isFavorite, setIsFavorite] = useState(false);
   return (
     <>
       <div className="grid p-4">
-        <Image
-          src="/dummydog.jpg"
-          alt="Creepy doog"
-          width={500}
-          height={500}
-          className="col-start-1 row-start-1 rounded-3xl aspect-square object-cover"
-        />
-
-        <button
-          type="button"
-          onClick={() => setIsFavorite((favorite) => !favorite)}
-          aria-label={
-            isFavorite ? "Fjern fra favoritter" : "Føj til favoritter"
-          }
-          aria-pressed={isFavorite}
-          className="col-start-1 row-start-1 m-1 justify-self-end self-start bg-[#ffffff67] rounded-full p-2 text-white"
-        >
-          {isFavorite ? (
-            <FaStar className="size-6" />
-          ) : (
-            <FaRegStar className="size-6" />
-          )}
-        </button>
-
-        <Link
-          href="/"
-          className="bg-gray-100 rounded-full m-1 p-2 text-gray-900 col-start-1 row-start-1 justify-self-start self-start h-fit"
-        >
-          <MdKeyboardArrowLeft className="size-8" />
-        </Link>
+        <div className="relative grid w-fit">
+          <Image
+            src="/dummydog.jpg"
+            alt="Creepy doog"
+            width={500}
+            height={500}
+            className="col-start-1 row-start-1 rounded-3xl aspect-square object-cover"
+          />
+          <Link
+            href="/"
+            className="bg-gray-100 transition-colors duration-400 ease-in-out 
+            hover:bg-(--coral-accent) rounded-full m-4 p-2 
+            text-gray-900 hover:text-gray-100 col-start-1 row-start-1 justify-self-start self-start h-fit"
+          >
+            <MdKeyboardArrowLeft className="size-8" />
+          </Link>
+          <StarBtn />
+          <MiniCard />
+        </div>
 
         <h1 className="text-3xl font-bold text-gray-800 leading-1.5 py-6">
           Affenpinscher

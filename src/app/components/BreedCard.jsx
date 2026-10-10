@@ -14,13 +14,13 @@ const BreedCard = ({className = "", breedname, from}) => {
           className="col-start-1 row-start-1 rounded-3xl aspect-4/3 object-cover"
         />
 
-        <div className="p-4 gap-4 text-gray-700">
+        <StarBtn />
+
+        <div className="p-4 gap-4">
           <h2 className="font-semibold text-xl leading-10">{breedname}</h2>
           <p className="text-sx">{from}</p>
         </div>
       </Link>
-
-      <StarBtn />
     </article>
   );
 };
