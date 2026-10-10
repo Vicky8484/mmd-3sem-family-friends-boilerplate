@@ -1,14 +1,11 @@
-import {Geist, Geist_Mono} from "next/font/google";
-import {IoMdNotificationsOutline} from "react-icons/io";
+import {Gudea} from "next/font/google";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const gudea = Gudea({
+  weight: ["400", "700"],
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-gudea",
 });
 
 export const metadata = {
@@ -19,16 +16,13 @@ export const metadata = {
 
 export default function RootLayout({children}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-gray-900">
-        <header className="flex h-8 text-gray-900 font-bold items-center p-4 border-black justify-between">
-          <h2>FamilyFriends</h2>
-          <IoMdNotificationsOutline />
-        </header>
-        {children}
+    <html lang="en" className={`${gudea.variable} h-full antialiased`}>
+      <body className="bg-gray-900">
+        <main className="min-h-full flex flex-col max-w-md m-auto">
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
